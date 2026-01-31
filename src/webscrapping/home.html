@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Journey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .visits-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .visits-section h2 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        
+        .visits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .visit-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #667eea;
+        }
+        
+        .visit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .visit-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        
+        .visit-card .location {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        
+        .visit-card .date {
+            color: #888;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        .visit-card .description {
+            margin-top: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            gap: 20px;
+        }
+        
+        .stat-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .stat-box .number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .stat-box .label {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Journey</h1>
+            <p>Exploring the world, one destination at a time</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="number">24</div>
+                <div class="label">Countries Visited</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">87</div>
+                <div class="label">Cities Explored</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">156</div>
+                <div class="label">Adventures</div>
+            </div>
+        </div>
+        
+        <div class="visits-section">
+            <h2>Recent Visits</h2>
+            
+            <div class="visits-grid">
+                <div class="visit-card">
+                    <h3>🗼 Paris</h3>
+                    <div class="location">📍 France</div>
+                    <div class="date">December 2025</div>
+                    <div class="description">
+                        Explored the Eiffel Tower at sunset, wandered through the Louvre, and enjoyed authentic croissants at local cafés.
+                    </div>
+                </div>
+                
+                <div class="visit-card">
+                    <h3>🏔️ Swiss Alps</h3>
+                    <div class="location">📍 Switzerland</div>
+                    <div class="date">November 2025</div>
+                    <div class="description">
+                        Breathtaking skiing experience in Zermatt with stunning views of the Matterhorn. Pure winter wonderland!
+                    </div>
+                </div>
+                
+                <div class="visit-card">
+                    <h3>🏛️ Athens</h3>
+                    <div class="location">📍 Greece</div>
+                    <div class="date">October 2025</div>
+                    <div class="description">
+                        Walked through ancient history at the Acropolis and Parthenon. The Mediterranean cuisine was unforgettable.
+                    </div>
+                </div>
+                
+                <div class="visit-card">
+                    <h3>🌊 Santorini</h3>
+                    <div class="location">📍 Greece</div>
+                    <div class="date">September 2025</div>
+                    <div class="description">
+                        Witnessed the most beautiful sunset from Oia. The white-washed buildings and blue domes were mesmerizing.
+                    </div>
+                </div>
+                
+                <div class="visit-card">
+                    <h3>🍕 Rome</h3>
+                    <div class="location">📍 Italy</div>
+                    <div class="date">August 2025</div>
+                    <div class="description">
+                        From the Colosseum to the Vatican, every corner told a story. The gelato was an added bonus!
+                    </div>
+                </div>
+                
+                <div class="visit-card">
+                    <h3>🎭 Barcelona</h3>
+                    <div class="location">📍 Spain</div>
+                    <div class="date">July 2025</div>
+                    <div class="description">
+                        Gaudí's architecture left me speechless. La Sagrada Familia and Park Güell were architectural masterpieces.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 My Personal Journey | Adventure Awaits</p>
+        </footer>
+    </div>
+</body>
+</html>
